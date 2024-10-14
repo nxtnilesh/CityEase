@@ -16,7 +16,7 @@ const Model = ({ modelId, heading, message, action }) => {
         <h3 className="font-bold text-lg">{heading}</h3>
         <p className="py-4">{message}</p>
         <IssueForm />
-       
+        {/* onClick={()=>document.getElementById(modalId).showModal()} */}
       </div>
     </dialog>
   );

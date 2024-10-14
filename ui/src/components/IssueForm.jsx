@@ -4,7 +4,7 @@ import { BiCategory } from "react-icons/bi";
 
 const IssueForm = () => {
   return (
-    <form className="flex flex-col gap-2">
+    <form className="flex flex-col gap-2 bg-slate-50 py-5 px-20 rounded-md w-full">
       <label className="input input-bordered flex items-center gap-2">
         <CiLocationOn />
         <input type="text" className="grow" placeholder="Location" />

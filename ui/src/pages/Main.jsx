@@ -1,7 +1,12 @@
 import React from "react";
 import Section from "../components/Section";
+import { useNavigate } from "react-router-dom";
 
 export const Main = () => {
+  const navigate = useNavigate();
+  function openCategory() {
+    navigate("/select-category")
+  }
   return (
     <main>
       {/* main image */}
@@ -33,7 +38,7 @@ export const Main = () => {
             "https://img.icons8.com/?size=100&id=11691&format=png&color=000000"
           }
           text={"Report a Issue"}
-          modalId={"report"}
+          openScreen={openCategory}
         />
         <Section
           image={
