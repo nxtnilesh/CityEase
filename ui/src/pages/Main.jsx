@@ -4,7 +4,7 @@ import Section from "../components/Section";
 export const Main = () => {
   return (
     <main>
-      {/* Main image */}
+      {/* main image */}
       <div
         className="hero min-h-screen"
         style={{
@@ -26,12 +26,49 @@ export const Main = () => {
         </div>
       </div>
 
-      {/*Section  */}
+      {/*sub category  */}
       <section className="flex w-full justify-center gap-2 my-2">
-        <Section image={"https://img.icons8.com/?size=100&id=11691&format=png&color=000000"} text={"Report a Issue"}/>
-        <Section image={"https://img.icons8.com/?size=100&id=24875&format=png&color=000000"} text={"Track Progress"}/>
-        <Section image={"https://img.icons8.com/?size=100&id=7649&format=png&color=000000"} text={"Rewards and Leaderboard"}/>
+        <Section
+          image={
+            "https://img.icons8.com/?size=100&id=11691&format=png&color=000000"
+          }
+          text={"Report a Issue"}
+          modalId={"report"}
+        />
+        <Section
+          image={
+            "https://img.icons8.com/?size=100&id=24875&format=png&color=000000"
+          }
+          text={"Track Progress"}
+        />
+        <Section
+          image={
+            "https://img.icons8.com/?size=100&id=7649&format=png&color=000000"
+          }
+          text={"Rewards and Leaderboard"}
+        />
       </section>
+
+      {/* about section */}
+      <section className="mb-3">
+        <div className="text-center p-3">
+          <h1 className="text-3xl">About CityEase</h1>
+        </div>
+        <div className="flex items-center">
+          <div className="bg-purple-300 max-w-screen-lg p-8 text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est
+            enim expedita asperiores earum voluptatibus excepturi eos a!
+            Adipisci odio quam, animi unde cum obcaecati saepe dolor harum esse
+            laboriosam.
+          </div>
+          <div className="w-full bg-red-400 p-8 text-xl">
+            Empowering you to shape a better city
+          </div>
+        </div>
+      </section>
+
+      {/* carousel */}
+      {/* <Carousel /> */}
     </main>
   );
 };
